@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/join/join",
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#EC1F23",
+    "navigationBarTitleText": "赛鲜",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "selectedColor":"#EC1F23",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"images/index3.png",
+      "selectedIconPath":"images/index2.png"
+    },
+    {
+      "pagePath": "pages/join/join",
+      "text": "我的",
+      "iconPath":"images/my3.png",
+      "selectedIconPath": "images/my2.png"
+    }]
+  }
+}

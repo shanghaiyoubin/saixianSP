@@ -1,0 +1,4 @@
+var splits = function (val) {
+ return val.split(",")[0];
+}
+module.exports.splits = splits;

@@ -45,7 +45,7 @@ Page({
     var that = this;
     // banner
     wx.request({
-      url: 'http://beta.cyberfresh.cn/m/mobile/guess/guesslike?mtype=wx&promotionId=2&appVersionNumber=2.2.2&showType=PERSON', 
+      url: 'http://test.cyberfresh.cn/m/mobile/guess/guesslike?mtype=wx&promotionId=2&appVersionNumber=2.2.2&showType=PERSON', 
       
       header: {
         'content-type': 'application/json' // 默认值
@@ -62,7 +62,7 @@ Page({
       }
     });
     wx.request({
-      url: 'http://beta.cyberfresh.cn/m/classify/get_home_classify',
+      url: 'http://test.cyberfresh.cn/m/classify/get_home_classify',
       data: {
         mtype: 'WX',
         showType: 'SOGO'

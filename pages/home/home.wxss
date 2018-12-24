@@ -197,4 +197,9 @@ text-align: center;
 }
 #scroll_swipers{
  height: 68rpx; 
+ font-size: 24rpx;
+}
+.broadcast_price{
+  color: #ec1f23;
+  font-size: 24rpx;
 }

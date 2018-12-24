@@ -1,0 +1,44 @@
+<view class='shop-mana'>
+<text class='management'>浙江中小企业大厦</text>
+<text class='goto'></text>
+</view>
+<view class='carts'>
+<view class='goods' wx:for="{{goods}}" wx:key="goods">
+<view class='goods-check'>
+<!-- wx:if 是否选择显示不同图标 -->
+<icon wx:if="{{item.selected}}" type="success" color="red" bindtap="change" data-index="{{index}}" />
+<icon wx:else type="circle" bindtap="change" data-index="{{index}}"/>
+<!-- <icon type="{{item.select}}" size="22" data-index="{{index}}" data-select="{{item.select}}" bindtap="change" /> -->
+</view>
+<view class='goods-details'>
+<view class='goods-img'>
+<image src='{{staticImg}}shopping-carts/item1.png'></image>
+</view>
+<view class='goods-title'>
+<view class='goods-name'>{{item.goodsName}}</view>
+<view class='goods-apply'>{{item.goodsApply}}</view>
+<view class='goods-bot'>
+<text class='goods-pri'>¥{{item.goodsPrice}}</text>
+<view class="goods-number">
+<button class="goods-minu" data-index="{{index}}" data-num="{{item.num}}" bindtap="subtraction">-</button>
+<text class="num">{{item.num}}</text>
+<button class="goods-add" data-index="{{index}}" data-num="{{item.num}}" bindtap="addtion">+</button>
+</view>
+</view>
+</view>
+</view>
+</view>
+</view>
+<view class='goods-footer'>
+<view class="allSelect">
+<!-- <icon type="{{allSelect}}" size="22" data-select="{{allSelect}}" bindtap="allSelect" class='allse' /> -->
+<icon wx:if="{{selectAllStatus}}" type="success" color="red" bindtap="selectAll" class='allse' />
+<icon wx:else type="circle" bindtap="selectAll" class='allse'/>
+<view class="allSelect-text">全选</view>
+</view>
+<text class='sum'>合计:</text>
+<text class='total-pri'>¥{{totalPrice}}</text>
+<view class='settlement'>结算
+<text>({{num}})</text>
+</view>
+</view>

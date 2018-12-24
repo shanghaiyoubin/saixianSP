@@ -1,0 +1,63 @@
+<wxs src="../../wxs/split.wxs" module="tools" />
+<view class="header">
+  <view class='header_wrap_left'>
+    <image src="../../images/saoma.png" class='saoma'></image>
+    <text class='saoyisao'>扫一扫</text>
+  </view>
+  <view class='header_wrap_center'>
+    <input placeholder="" auto-focus />
+    <image src='../../images/search_ico.png'></image>
+  </view>
+  <view class='header_wrap_right'>
+    <image src="../../images/message.png" class='saoma'></image>
+    <text class='saoyisao'>消息</text>
+  </view>
+</view>
+<view class='position_wrap'>
+<swiper id='swipers' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{movies}}" wx:key="{{movies.id}}">
+    <swiper-item>
+      <image src="{{tools.splits(item.mainImage)}}" class="slide-image"  />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='no_ps'>
+  <image src='../../images/no_ps.png' class='no_ps_ico1'></image>
+  <text>当前位置不在配送范围内，搜搜其他地址</text>
+  <image src='../../images/no_psj.png' class='no_ps_ico2'></image>
+
+</view>
+</view>
+
+<view class='address_modify_wrap'>
+   <view class='address_modify'>
+      <image src='../../images/positon_add.png' class='positon_add_ico'></image>
+      <text>杭州市西湖区......</text>
+   </view>
+</view>
+<view class='classify_all'>
+  <view class='classify_wrap' wx:for="{{classifycon}}" wx:key="{{classifycon.id}}">
+   <image src='{{item.imageUrl}}'></image>
+   <text>{{item.classifyName}}</text>
+  </view>
+  <view class='classify_wrap'>
+   <image src='../../images/three_circles.png'></image>
+   <text>更多分类</text>
+   </view>
+</view>
+<view class='saixianbobao'>
+   <image src='../../images/bobao.png'></image>
+   <view class='scroll_wrap'>
+      <swiper id='scroll_swipers' 
+        autoplay="{{autoplay2}}" vertical="{{vertical2}}" interval="{{interval2}}" duration="{{duration2}}" circular="{{circular2}}">
+        <block wx:for="{{movies}}" wx:key="{{movies.id}}">
+          <swiper-item>
+            <image src="{{tools.splits(item.mainImage)}}" class="slide-image"  />
+          </swiper-item>
+        </block>
+      </swiper>
+   </view>
+</view>
+
+

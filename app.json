@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/my/my",
+    "pages/cart/cart"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#EC1F23",
+    "navigationBarTitleText": "赛鲜",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "selectedColor":"#EC1F23",
+    "list":[{
+      "pagePath":"pages/home/home",
+      "text":"首页",
+      "iconPath":"images/index3.png",
+      "selectedIconPath":"images/index2.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "images/index3.png",
+      "selectedIconPath": "images/index2.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath":"images/my3.png",
+      "selectedIconPath": "images/my2.png"
+    }]
+  }
+}

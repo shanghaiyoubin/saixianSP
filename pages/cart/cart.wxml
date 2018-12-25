@@ -38,7 +38,7 @@
 </view>
 <text class='sum'>合计:</text>
 <text class='total-pri'>¥{{totalPrice}}</text>
-<view class='settlement'>结算
+<view class='settlement' bindtap='toConfirmOredr'>结算
 <text>({{num}})</text>
 </view>
 </view>

@@ -228,4 +228,9 @@ Page({
       totalPrice: newCount,
     })
   },
+  toConfirmOredr:function(){
+    wx.navigateTo({
+      url: '../confirmOrder/confirmOrder'
+  })
+  },
 })

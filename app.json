@@ -2,7 +2,8 @@
   "pages":[
     "pages/home/home",
     "pages/my/my",
-    "pages/cart/cart"
+    "pages/cart/cart",
+    "pages/confirmOrder/confirmOrder"
     
   ],
   "window":{

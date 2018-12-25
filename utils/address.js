@@ -11,8 +11,9 @@ else {
 var Address = {
   // 赛鲜精选
   SX_Select: DOMAIN + 'm/mobile/guess/guesslike', 
- 
-  GET_MODEl_INFO_BY_ID: DOMAIN + 'apiMiapp/GetModelInfoById', // 参数id
+ //购物车列表
+  Card_list: DOMAIN + '/m/auth/cart/select_commodity_by_customer_type',
+
 }
 
 var params = {
